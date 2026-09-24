@@ -12,6 +12,8 @@ The completed full-run results are in [RESULTS.md](RESULTS.md).
 | ArBanking77 | 15,534 | 77 | MSA, Palestinian, Saudi, Moroccan, and Tunisian banking intents |
 | CLINC150 | 5,500 | 151 | 150 assistant intents plus out-of-scope detection |
 
+![Laya-CoreML vs Jev benchmark results](media/full-benchmark-table-simple.png)
+
 This is a zero-shot classification benchmark. Training and validation data are never passed to either model. It does not measure general knowledge, long-form reasoning, or text generation.
 
 Laya's maintainers recommend keeping choice questions below roughly 20 options because all option labels share a fixed token budget. Banking77 and CLINC150 deliberately exceed that recommendation. They are valid stress tests of the requested 77-way and 151-way use case, but their results should not be presented as a general measure of every Laya capability.
